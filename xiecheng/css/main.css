@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+.img-item{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.img-item img{
+    width: 100%;
+}
+
+.nav-list{
+    padding: 5px;
+    cursor: pointer;
+}
+.nav-list:after{
+    content: "";
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+.nav-list li{
+    float: left;
+    position: relative;
+    margin-bottom: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.nav-list li:before{
+    position: absolute;
+    content: "";
+    background-image: url("../images/home.png");
+    background-repeat: no-repeat;
+    background-size: 170px 160px;
+    /*设置横向居中*/
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+.nav-list h3{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight:normal;
+}
+.nav-list h3 a{
+    color: #fff;
+    font-size: 14px;
+}
+.nav-list .nav-fortun  h3{
+    top: 60px;
+    width:100%;
+    text-align: center;
+}
+.nav-list .nav-fortun  h3 a{
+    color: #ff9913;
+}
+.nav-flight,.nav-hotel,.nav-trip{
+    width: 40%;
+}
+.nav-train,.nav-car,.nav-fortun, .nav-strategy,.nav-ticket,.nav-week{
+    width: 30%;
+    border-left: 5px solid #ffffff;
+}
+.nav-fortun,.nav-hotel,.nav-strategy{height: 93px;}
+.nav-ticket, .nav-week,.nav-train,.nav-car,.nav-trip,.nav-flight{height: 70px;}
+
+.nav-flight{background-color: #2482F1;}
+.nav-hotel{background-color: #00AED9;}
+.nav-trip{background-color: #7CBD11;}
+.nav-train{background-color: #009395;}
+.nav-car{background-color: #915CF2;}
+.nav-fortun{background-color: #DBF4F4;}
+.nav-strategy{background-color: #FF8844;}
+.nav-ticket{background-color: #F8AF09;}
+.nav-week{background-color: #72C2D1;}
+
+/*li:first-child{background-color: #2482F1;}*/
+/*li:nth-child(2){background-color: #00AED9;}*/
+/*li:nth-child(3){background-color: #7CBD11;}*/
+/*li:nth-child(4){background-color: #009395;}*/
+/*li:nth-child(5){background-color: #915CF2;}*/
+/*li:nth-child(6){background-color: #DBF4F4;}*/
+/*li:nth-child(7){background-color: #FF8844;}*/
+/*li:nth-child(8){background-color: #F8AF09;}*/
+/*li:last-child{background-color: #72C2D1;}*/
+
+.nav-flight:before{
+    top: 24px;
+    left:50%;
+    width: 60px;
+    height: 35px;
+    background-position: 0 0;
+}
+.nav-train:before{
+    top: 24px;
+    left:50%;
+    width: 50px;
+    height: 20px;
+    background-position: -70px 0;
+}
+.nav-car:before{
+    top: 24px;
+    left:50%;
+    width: 40px;
+    height: 30px;
+    background-position: -130px 0;
+}
+.nav-hotel:before{
+    top: 30px;
+    left:50%;
+    width: 58px;
+    height: 44px;
+    background-position: 0 -40px;
+}
+.nav-trip:before{
+    top: 25px;
+    left:50%;
+    width: 40px;
+    height: 32px;
+    background-position: 0 -90px;
+}
+.nav-fortun:before{
+    top: 24px;
+    left:50%;
+    width: 25px;
+    height: 40px;
+    background-position: -60px -25px;
+}
+.nav-week:before{
+    top: 32px;
+    left:50%;
+    width: 49px;
+    height: 26px;
+    background-position: -50px -100px;
+}
+.nav-ticket:before{
+    top: 30px;
+    left:50%;
+    width: 50px;
+    height: 26px;
+    background-position: -65px -70px;
+}
+.nav-strategy:before{
+    top: 25px;
+    left:50%;
+    width: 30px;
+    height: 40px;
+    background-position: -120px -80px;
+}
+
+/*footer*/
+.footer{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 60px;
+
+}
+.footer a{
+    color: #333;
+}
+.tool-cn{
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    background-color: #fff;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+.tool-cn a{
+    padding:0 5px;
+}
+.tool-cn a.link-tel{
+    color: #5393e1;
+}
+.tool-cn a.link-mc{
+  border-left: 1px solid #cccccc;
+    /*伪类的定位设置定位*/
+    position: relative;
+    padding-left:30px;
+    margin-left: 5px;
+}
+.tool-cn a.link-mc:before{
+    content: "";
+    background: url("../images/home.png") no-repeat -30px -130px;
+    width: 16px;
+    height: 16px;
+    background-size: 170px 160px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.tool-ver a{
+    padding:0 10px;
+}
+
+/*aside*/
+.copy_wrap{
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: 12px;
+}
+.copy{
+    background-color: #000000;
+    opacity: 0.5;
+    border-radius: 8px;
+    position: relative;
+}
+.copy i{
+    border-top: 8px solid #000000;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    left:50%;
+    bottom: -8px;
+    width: 0;
+    height: 0;
+}
+.copy p{
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}

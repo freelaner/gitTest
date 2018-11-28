@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body,html,nav,header,footer,aside,ul,li,h3,p,div,a{margin: 0;padding: 0;}
+
+ul,ol,li{list-style: none}
+img{border: 0;}
+input,img{vertical-align: middle;}
+input:focus{outline: none;}
+a{text-decoration: none;}
+
+body{font: normal 14px/1.5 "microsoft yahei",sans-serif;min-width: 320px;color: #000;background-color: #e7f8ff;overflow-x: hidden}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
